@@ -67,9 +67,9 @@ void TNetInfBs::LoadCascadesTxt(TSIn& SIn, const int& Model, const double& alpha
     TStrV NIdV; Line.SplitOnAllCh(',', NIdV);
       AddNodeNm(NIdV[0].GetInt(), TNodeInfo(NIdV[1], 0)); 
   }
-  printf("All nodes read!\n");
+  //printf("All nodes read!\n");
   while (!SIn.Eof()) { SIn.GetNextLn(Line); AddCasc(Line, Model, alpha); }
-  printf("All cascades read!\n");
+  //printf("All cascades read!\n");
 }
 
 void TNetInfBs::LoadGroundTruthTxt(TSIn& SIn) {
